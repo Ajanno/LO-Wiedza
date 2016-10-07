@@ -1,0 +1,51 @@
+.main-slider {
+	.orbit-container {
+		max-height: 70vh;
+
+	}
+	.orbit-slide {
+		div {
+			position: relative;
+
+			h2 {
+				@include centerer;
+				top: 40%;
+				font-weight: 800;
+				text-shadow: 1px 2px 3px $red;
+			}
+		}
+	}
+
+    h2,
+    p {
+        color: $yellow;
+        text-align: center;
+    }
+  
+
+    .orbit-previous, .orbit-next  {
+    	background-color: $red;
+    	color: $yellow;
+    	opacity: .1; 
+    	transition: opacity 2s;
+    	&:hover, 
+    	&:focus {
+    		opacity: 1;
+    		transition: opacity 2s;
+    	}
+    }
+
+    .orbit-bullets {
+    	button {
+    		background-color: $red;
+    		&:hover {
+    		opacity: .9;
+    	}
+    		&.is-active {
+    		background-color: $yellow;
+    	}
+    	}
+
+
+    }
+}

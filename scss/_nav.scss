@@ -1,0 +1,94 @@
+.site-nav {
+    background: $red;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    @media #{$medium-up} {
+        width: 25%;
+    }
+
+    h1 {
+        text-align: center;
+
+        .logo {
+            width: 40%;
+            height: auto;
+            margin: 10px auto;
+        }
+    }
+
+    ul.main-menu {
+        margin: 0 0 0 15px;
+
+        li {
+            border-bottom: 1px solid $yellow;
+
+            a { 
+
+                color: $yellow;
+                &:hover {
+                	opacity: .8;
+                }
+            }
+            .drop {
+            	display: none;
+            	background :lighten( $red, 10% );
+            	text-align: center;
+            	font-size: .8em;
+            	li {
+            		border: none;
+            	}
+            }
+          
+        }
+    }
+
+   
+
+    a {
+        color: $yellow;
+    }
+
+
+}
+
+.site-footer {
+	text-align:center;
+	h3, p {
+		font-size: .7rem;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		color: $yellow;
+		opacity: .7;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	h3 {
+		font-weight: 800;
+	}
+	    .social-bar {
+
+        display: inline-block;
+
+        li {
+            a {
+                font-size: 2rem;
+
+                &:hover,
+                &:focus {
+                    opacity: .9;
+                }
+            }
+        }
+    }
+}
