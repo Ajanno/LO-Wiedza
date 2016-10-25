@@ -2,7 +2,12 @@ $red: #ee1c25;
 $yellow: #fef103;
 
 .side-container {
-	margin-left: 25%;
+	
+	 @media #{$medium-up} {
+        margin-left: 25%;
+        
+    }
+
 	
 }
 @mixin centerer {
